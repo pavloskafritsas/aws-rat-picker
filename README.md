@@ -15,6 +15,7 @@ This application is a lightweight wrapper around the shell script [AWS RAT](http
 
 - **AWS RAT Script**: Clone [AWS RAT](https://github.com/gadamo/aws_rat) into `~/Projects/Prosperty` directory.
 - **AWS CLI**: Ensure that the AWS Command Line Interface is installed and configured with profiles in `~/.aws/credentials`.
+- **iniparser**: This application depends on the `iniparser` library for reading and parsing INI files.
 - **Shell Environment**: This tool is designed to work in Linux environments.
 
 ### Steps
@@ -24,7 +25,6 @@ This application is a lightweight wrapper around the shell script [AWS RAT](http
    ```bash
    git clone https://github.com/pavloskafritsas/aws-rat-picker.git
    cd aws-rat-picker
-
    ```
 
 2. Build the application using Makefile:
@@ -86,3 +86,7 @@ region = us-east-1
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+```
+
+```
