@@ -15,7 +15,7 @@ TARGET = $(OUT_DIR)/$(TARGET_NAME)
 
 # Source and object files
 SRCS = $(shell find $(SRC_DIR) -name "*.c")
-OBJS = $(patsubst %.c,$(OBJ_DIR)/%.o,$(SRCS))
+OBJS = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRCS))
 
 # Default target
 all: $(TARGET)
@@ -26,7 +26,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Compile .c to .o, preserving folder structure
-$(OBJ_DIR)/%.o: %.c
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
