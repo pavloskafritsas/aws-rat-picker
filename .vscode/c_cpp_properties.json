@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/include",
+        "/usr/include",
+        "/usr/local/include"
+      ],
+      "browse": {
+        "path": ["${workspaceFolder}/include"],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "c++17"
+    }
+  ],
+
+  "version": 4
+}
